@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "members",
+  "info": {
+    "singularName": "member",
+    "pluralName": "members",
+    "displayName": "Member",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Email": {
+      "type": "email",
+      "required": true,
+      "unique": true
+    },
+    "PhoneNumber": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "regex": "^(\\+\\d{1,2}\\s)?\\(?\\d{3,4}\\)?[\\s.-]?\\d{3}[\\s.-]?\\d{4}$"
+    }
+  }
+}
