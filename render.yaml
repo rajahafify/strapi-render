@@ -1,15 +1,12 @@
 services:
   - type: web
     name: strapi
+    region: singapore
     env: node
     plan: starter
     buildCommand: yarn install && yarn build
     startCommand: yarn start
     healthCheckPath: /_health
-    disk:
-      name: strapi-uploads
-      mountPath: /opt/render/project/src/public/uploads
-      sizeGB: 1
     envVars:
       - key: NODE_VERSION
         value: ~16.13.0
@@ -29,3 +26,4 @@ services:
 databases:
   - name: strapi
     plan: starter
+    region: singapore
