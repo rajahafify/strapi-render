@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2022-07-03T20:02:22.410Z"
+    "x-generation-date": "2022-07-05T14:56:05.710Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -97,7 +97,8 @@
             "required": [
               "name",
               "email",
-              "phoneNumber"
+              "phoneNumber",
+              "ic_number"
             ],
             "type": "object",
             "properties": {
@@ -124,6 +125,9 @@
                   ],
                   "example": "string or id"
                 }
+              },
+              "ic_number": {
+                "type": "string"
               }
             }
           }
@@ -585,6 +589,9 @@
                                                   }
                                                 }
                                               },
+                                              "ic_number": {
+                                                "type": "string"
+                                              },
                                               "createdAt": {
                                                 "type": "string",
                                                 "format": "date-time"
@@ -946,6 +953,9 @@
                           }
                         }
                       }
+                    },
+                    "ic_number": {
+                      "type": "string"
                     },
                     "createdAt": {
                       "type": "string",
@@ -1473,6 +1483,9 @@
                                                 }
                                               }
                                             },
+                                            "ic_number": {
+                                              "type": "string"
+                                            },
                                             "createdAt": {
                                               "type": "string",
                                               "format": "date-time"
@@ -1834,6 +1847,9 @@
                         }
                       }
                     }
+                  },
+                  "ic_number": {
+                    "type": "string"
                   },
                   "createdAt": {
                     "type": "string",
@@ -3095,6 +3111,9 @@
                           }
                         }
                       },
+                      "ic_number": {
+                        "type": "string"
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -4333,6 +4352,9 @@
                                       }
                                     }
                                   }
+                                },
+                                "ic_number": {
+                                  "type": "string"
                                 },
                                 "createdAt": {
                                   "type": "string",
@@ -5598,6 +5620,9 @@
                                     }
                                   }
                                 }
+                              },
+                              "ic_number": {
+                                "type": "string"
                               },
                               "createdAt": {
                                 "type": "string",

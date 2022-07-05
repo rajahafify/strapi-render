@@ -31,6 +31,12 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::post.post"
+    },
+    "ic_number": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "regex": "^\\d{6}[\\s.-]?\\d{2}[\\s.-]?\\d{4}$"
     }
   }
 }
